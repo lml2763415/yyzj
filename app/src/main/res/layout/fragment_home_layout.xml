@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comment"
+    >
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dp"
+    >
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lml.yyzj.view.BannerLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"></com.lml.yyzj.view.BannerLayout>
+
+
+    <include layout="@layout/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        />
+    <include layout="@layout/recommend_layout"/>
+
+</LinearLayout>
+
+</ScrollView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="孕育之家"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:background="@mipmap/titlebar_bg"
+        android:gravity="center"
+        android:layout_marginBottom="-8dp"
+        />
+</RelativeLayout>
